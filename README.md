@@ -56,3 +56,5 @@ ODE3.addBoundary(0,2.0,5.21)<br>
 **Input**: network_layers, cells, learn_rate, weight_decay, max_steps, threads, reduction<br>
 ODE1.solve_with(ODE2,ODE3,8,60,1e-5,0.005,40001,2,"mean")<br>
 if only 2 equations set ODE3 as None<br>
+## Instruction for PDE
+### ===CODING===
