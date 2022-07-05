@@ -3,7 +3,7 @@ solve ODE, ODE system and PDE with DNN in pytorch
 
 ## Instruction
 ### ===create an equation===
-input: xmin, xmax, samples
+<br>input: xmin, xmax, samples\<br>
 ODE1 = ODE(1,5,16000)
 
 ### ===set the equation===
