@@ -2,7 +2,7 @@
 solve ODE, ODE system and PDE with DNN in pytorch
 
 ## Requirements
-packages: python==3.9, pytorch== CUDA1.16, numpy, matplotlib.pyplot
+**packages**: python==3.9, pytorch== CUDA1.16, numpy, matplotlib.pyplot
 ## Instruction for single ODE
 ### ===1.create an equation===
 **Input**: xmin, xmax, samples
