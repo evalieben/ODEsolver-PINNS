@@ -3,18 +3,18 @@ solve ODE, ODE system and PDE with DNN in pytorch
 
 ## Instruction
 ### ===create an equation===
-<br>input: xmin, xmax, samples\<br>
-ODE1 = ODE(1,5,16000)
+input: xmin, xmax, samples
+<br>ODE1 = ODE(1,5,16000)\<br>
 
 ### ===set the equation===
-input: coeffs, variables, left_part, right_part<br>
-example1:\<br>
-x*f''(x) - 3*f'(x)f'(x) + f(x)*f'(x) = cosx/sinx + x^2 - 3*e^x + f(x)*lnx + logx +5
- ==> ODE1.setEquation([ODE1.xVar(),ODE1.diff(1,-3),ODE1.yVar()],[None],[2,1,1],"cos(x)/sin(x)+pow(x,2)- 3*exp(x)+y*log(x)+log10(x)+5")
-example2:
-         dy/dt-dx/dt = x*(A-B*y)
-         dz/dt-dy/dt = -y*(C-D*x)
-         dz/dt*dx/dt = z*x-y*z+t)
+input: coeffs, variables, left_part, right_part
+<br>example1:
+<br>x*f''(x) - 3*f'(x)f'(x) + f(x)*f'(x) = cosx/sinx + x^2 - 3*e^x + f(x)*lnx + logx +5\<br>
+<br> ==> ODE1.setEquation([ODE1.xVar(),ODE1.diff(1,-3),ODE1.yVar()],[None],[2,1,1],"cos(x)/sin(x)+pow(x,2)- 3*exp(x)+y*log(x)+log10(x)+5")\<br>
+<br>example2:\<br>
+         <br>dy/dt-dx/dt = x*(A-B*y)\<br>
+         <br>dz/dt-dy/dt = -y*(C-D*x)\<br>
+         <br>dz/dt*dx/dt = z*x-y*z+t)\<br>
  ==> ODE1.setEquation()
 single constant in right part should use ODE.constant()
 if only 1 equation set the variable as [None]
